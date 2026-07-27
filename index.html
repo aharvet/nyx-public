@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Politique de confidentialite - Nyx</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #08111f;
+        --bg-soft: #101c31;
+        --panel: rgba(10, 18, 33, 0.88);
+        --text: #eef4ff;
+        --muted: #b3c0d8;
+        --line: rgba(151, 174, 212, 0.22);
+        --accent: #7cc4ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background:
+          radial-gradient(circle at top, rgba(58, 108, 180, 0.28), transparent 34rem),
+          linear-gradient(180deg, var(--bg), #040812 72%);
+        color: var(--text);
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0 80px;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 32px 24px;
+        backdrop-filter: blur(14px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 14px;
+        line-height: 1.15;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      h2 {
+        margin-top: 36px;
+        font-size: 1.35rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.72;
+      }
+
+      p.lead {
+        font-size: 1.12rem;
+      }
+
+      strong {
+        color: var(--text);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      ul {
+        margin: 14px 0 0;
+        padding-left: 20px;
+      }
+
+      .meta {
+        margin-top: 12px;
+        color: var(--muted);
+      }
+
+      .box {
+        margin-top: 18px;
+        padding: 18px;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: var(--bg-soft);
+      }
+
+      @media (max-width: 640px) {
+        main {
+          width: min(100% - 20px, 860px);
+          padding: 28px 0 40px;
+        }
+
+        .panel {
+          padding: 24px 18px;
+          border-radius: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <h1>Politique de confidentialite</h1>
+        <p class="lead">
+          Cette politique de confidentialite decrit les donnees traitees par l'application Nyx, editee par
+          <strong>Polycontext</strong>.
+        </p>
+        <p class="meta">
+          Derniere mise a jour : 27 juillet 2026
+        </p>
+
+        <h2>1. Compte utilisateur</h2>
+        <p>
+          Nyx ne demande pas la creation d'un compte utilisateur et ne vous demande pas de vous connecter.
+          Aucune adresse e-mail, aucun mot de passe, aucun nom de profil et aucun numero de telephone ne sont
+          collectes par l'application.
+        </p>
+
+        <h2>2. Donnees conservees sur votre telephone</h2>
+        <p>
+          Nyx conserve localement, sur votre appareil, certaines preferences et informations de fonctionnement
+          afin que l'application retrouve votre etat entre deux utilisations.
+        </p>
+        <ul>
+          <li>vos favoris ;</li>
+          <li>votre mix personnel, y compris les sons choisis et leur volume ;</li>
+          <li>le dernier son charge pour la fonction de reprise ;</li>
+          <li>vos reponses d'onboarding et l'etape atteinte ;</li>
+          <li>l'indicateur de fin d'onboarding ;</li>
+          <li>votre preference d'activation ou non des rappels ;</li>
+          <li>la date de debut de l'essai gratuit, pour calculer un rappel local de fin d'essai.</li>
+        </ul>
+        <p>
+          Ces donnees restent sur le telephone. Elles ne sont pas envoyees a un serveur de Polycontext d'apres le
+          code actuellement present dans l'application.
+        </p>
+
+        <h2>3. Notifications et rappels</h2>
+        <p>
+          Nyx peut vous demander l'autorisation d'afficher des notifications uniquement lorsque vous activez un
+          rappel. Les rappels sont programmes localement par le telephone lui-meme. Le code de l'application ne met
+          pas en place de token push, de serveur d'envoi, ni de notifications distantes.
+        </p>
+        <div class="box">
+          <p>
+            En pratique, le rappel de fin d'essai est une notification locale. Si vous refusez l'autorisation,
+            l'application continue de fonctionner, mais le rappel n'est pas programme.
+          </p>
+        </div>
+
+        <h2>4. Achats integres et abonnement</h2>
+        <p>
+          Sur iPhone et iPad, Nyx utilise les achats integres de l'App Store pour proposer l'abonnement Premium.
+          Le traitement du paiement est gere par <strong>Apple</strong>. Nyx n'accede pas a vos donnees de carte
+          bancaire.
+        </p>
+        <p>
+          Nyx utilise egalement <strong>RevenueCat</strong> pour recuperer les offres d'abonnement disponibles,
+          lancer l'achat integre et verifier si un droit Premium est actif sur l'appareil.
+        </p>
+        <p>
+          Le code de l'application ne transmet pas de compte utilisateur maison a RevenueCat. D'apres la
+          documentation officielle de RevenueCat, cela signifie qu'un identifiant technique anonyme peut etre genere
+          par leur service pour gerer l'etat de l'abonnement.
+        </p>
+
+        <h2>5. Ce qui part vers un serveur</h2>
+        <p>
+          D'apres le code actuellement present dans l'application, Nyx ne contacte pas de serveur exploite par
+          Polycontext.
+        </p>
+        <p>
+          Les seuls services externes effectivement visibles dans le code sont les suivants :
+        </p>
+        <ul>
+          <li>Apple, pour les achats integres sur iOS ;</li>
+          <li>RevenueCat, pour la gestion technique des offres et des droits d'abonnement.</li>
+        </ul>
+        <p>
+          Aucun autre service tiers d'analyse, de publicite, de mesure d'audience, de crash reporting, de chat, de
+          connexion, de base de donnees distante ou de backend applicatif n'a ete trouve dans le code examine.
+        </p>
+
+        <h2>6. Permissions et donnees non collectees</h2>
+        <p>
+          Nyx lit et joue des ressources audio integrees a l'application, mais le code bloque explicitement la
+          permission microphone sur Android et ne met pas en place d'enregistrement audio. Aucun compte, aucune
+          geolocalisation, aucun carnet d'adresses, aucune photo, aucune camera et aucun suivi publicitaire n'ont ete
+          identifies dans le code examine.
+        </p>
+
+        <h2>7. Duree de conservation</h2>
+        <ul>
+          <li>Les preferences et donnees locales restent sur votre appareil jusqu'a leur suppression par l'application, par vous-meme, ou lors de la desinstallation.</li>
+          <li>Le rappel local de fin d'essai reste programme jusqu'a son declenchement, sa desactivation dans les reglages, ou l'annulation des rappels.</li>
+          <li>Les donnees traitees par Apple et RevenueCat relevent de leurs propres politiques de conservation et de confidentialite.</li>
+        </ul>
+
+        <h2>8. Vos choix</h2>
+        <ul>
+          <li>Vous pouvez refuser l'autorisation de notifications.</li>
+          <li>Vous pouvez desactiver les rappels dans les reglages de Nyx.</li>
+          <li>Vous pouvez effacer les donnees locales en supprimant l'application ou, le cas echeant, via les fonctions de reinitialisation prevues dans l'application.</li>
+        </ul>
+
+        <h2>9. Contact</h2>
+        <p>
+          Editeur et responsable du traitement : <strong>Polycontext</strong><br>
+          Contact : <a href="mailto:contact@polycontexthub.com">contact@polycontexthub.com</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
